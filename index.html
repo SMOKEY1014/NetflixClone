@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix South Africa - Watch TV </title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="assets/netflix-icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+</head>
+
+<body>
+    
+    <div class="banner-wrap">
+        <div class="overlay"></div>
+        <!-- Navbar -->
+        <div class="navbar">
+            <img src="assets/logo.png" alt="Netflix Cover">
+            <a href="https://www.netflix.com/ke-en/login" target="_blank">Sign In</a>
+        </div>
+        <div class="banner-container">
+            <h1 class="card-title">Save data. Download easily to watch <br>offline.</h1>
+            <h2 class="card-subtitle">Plans starting from R49/month. Cancel anytime.</h2>
+
+            <!-- Get started form -->
+            <form>
+                <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div class="get-started-form">
+                    <input type="text" placeholder="Email Address">
+                    <button type="button"> Get Started ></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="info-container" id="tv">
+
+        <div class="info">
+            <h1 class="card-title">Enjoy on your TV.</h1>
+            <p class="card-subtitle">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple
+                TV,
+                Blu-ray players,
+                and more.
+            </p>
+        </div>
+
+        <div class="tv-container">
+            <img src="./assets/More-Assets/tv.png" alt="">
+            <!-- Inline video -->
+            <video autoplay playsinline muted loop>
+                <source src="./assets/More-Assets/video-tv-0819.m4v"
+                    type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="info-container">
+        
+        <div class="info">
+            <h1 class="card-title">Download your shows to watch offline</h1>
+            <p class="card-subtitle">Save your favorites easily and always have something to watch.</p>
+        </div>
+        
+        <div class="tv-container">
+            <img id="mobile" src="./assets/More-Assets/mobile-0819.jpg" alt="" >
+            <!-- Inline video -->
+            <div class="download-card">
+                <div class="stranger">
+                    <img src="./assets/More-Assets/boxshot.png" alt="">
+                    <div class="download-text">
+                        <h1>Stranger Things</h1>
+                        <p>Downloading...</p>
+                    </div>
+                </div>
+                
+                    <img class="download-animate" src="./assets/More-Assets/download-icon.gif" alt="">
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="info-container" id="in">
+        <div class="info" id="info2">
+            <h1 class="card-title">Watch everywhere</h1>
+            <p class="card-subtitle">Stream unlimited movies and TV shows <br> on your phone, tablet, laptop, and TV.</p>
+        </div>
+        
+    </div>
+
+    <div class="info-container" id="info-con3">
+        <div class="info" >
+            <h1 class="card-title">Create profiles for kids</h1>
+            <p class="card-subtitle">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+        </div>
+        <div class="kids">
+            <img src="./assets/More-Assets/kids.png" alt="">
+        </div>
+        
+    </div>
+
+    <div class="info-container" id="faq">
+        <div class="info" >
+            <h1 class="card-title">Frequently Asked Questions</h1>
+        </div>
+        <div class="faq-question" onclick="toggleDetails('faqDetails1', 'toggleIcon1')">
+            <span><div class="card-subtitle"> What is Netflix?</div></span>
+            <i id="toggleIcon1" class="large material-icons">add</i>
+        </div>
+        
+        <div class="faq-details" id="faqDetails1">
+            <p  class="card-subtitle">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, 
+                and more on thousands of internet-connected devices.
+                You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. 
+                There's always something new to discover and new TV shows and movies are added every week!</p>
+        </div>
+        
+        <div class="faq-question" onclick="toggleDetails('faqDetails2', 'toggleIcon2')">
+            <span><div class="card-subtitle"> How much does Netflix cost?</div></span>
+            <i id="toggleIcon2" class="large material-icons">add</i>
+        </div>
+        
+        <div class="faq-details" id="faqDetails2">
+            <p class="card-subtitle">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for 
+                one fixed monthly fee. Plans range from R 49 to R 199 a month. No extra costs, no contracts.
+            </p>
+        </div>
+        <div class="faq-question" onclick="toggleDetails('faqDetails3', 'toggleIcon3')">
+            <span><div class="card-subtitle"> Where can I watch?</div></span>
+            <i id="toggleIcon3" class="large material-icons">add</i>
+        </div>
+        
+        <div class="faq-details" id="faqDetails3">
+            <p class="card-subtitle">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the 
+                web at netflix.com from your personal computer or on any internet-connected device that
+                 offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch 
+                while you're on the go and without an internet connection. Take Netflix with you anywhere.
+            </p>
+        </div>
+        <div class="faq-question" onclick="toggleDetails('faqDetails4', 'toggleIcon4')">
+            <span><p class="card-subtitle">How do I cancel?</p> </span>
+            <i id="toggleIcon4" class="large material-icons">add</i>
+        </div>
+        
+        <div class="faq-details" id="faqDetails4">
+            <p class="card-subtitle">Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account 
+                online in two clicks. There are no cancellation fees – start or stop your account anytime.
+            </p>
+        </div>
+        <div class="faq-question" onclick="toggleDetails('faqDetails5', 'toggleIcon5')">
+            <span><p class="card-subtitle">What can I watch on Netflix?</p> </span>
+            <i id="toggleIcon5" class="large material-icons">add</i>
+        </div>
+        
+        <div class="faq-details" id="faqDetails5">
+            <p class="card-subtitle">Netflix has an extensive library of feature films, documentaries, TV shows, anime, 
+                award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+            </p>
+        </div>
+        <div class="faq-question" onclick="toggleDetails('faqDetails6', 'toggleIcon6')">
+            <span><p class="card-subtitle"> Is Netflix good for kids?</p></span>
+            <i id="toggleIcon6" class="large material-icons">add</i>
+        </div>
+        
+        <div class="faq-details" id="faqDetails6">
+            <p class="card-subtitle">The Netflix Kids experience is included in your membership to give parents control while 
+                kids enjoy family-friendly TV shows and movies in their own space. Kids profiles come with 
+                PIN-protected parental controls that let you restrict the maturity rating of content kids can 
+                watch and block specific titles you don’t want kids to see.</p>
+        </div>
+    <br><br>
+    <form>
+        <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+        <div class="get-started-form">
+            <input type="text" placeholder="Email Address">
+            <button type="button"> Get Started ></button>
+        </div>
+    </form>
+</div>
+
+
+
+    
+
+    <!-- This is the foother -->
+    <div class="footer">
+        <div class="footer-items">
+
+            <div class="footer-top">
+                <a href="" class="questions-title">Questions? Contact us.</a>
+            </div>
+
+            <ul class="footer-links">
+                <li id="faq-item">FAQ</li>
+                <li>Help Center</li>
+                <li>Account</li>
+                <li>Media Center</li>
+                <li>Investor Relations</li>
+                <li>Jobs</li>
+                <li>Ways to Watch</li>
+                <li>Terms of Use</li>
+                <li>Privacy</li>
+                <li>Cookie Preferences</li>
+                <li>Corporate Information</li>
+                <li>Contact Us</li>
+                <li>Speed Test</li>
+                <li>Legal Notices</li>
+                <li>Netflix Originals</li>
+            </ul>
+
+            <div class="language">
+                <i class="material-icons">language</i>
+                <select name="languages" id="languages">
+                    <option value="English">English</option>
+                    <option value="IsiZulu">IsiZulu</option>
+                    <option value="IsiXhosa">IsiXhosa</option>
+                    <option value="Swahili">Swahili</option>
+                </select>
+            </div>
+
+            <p class="footer-country">
+                Netflix South Africa <br>Dev : Ntuthuko Phakamani Dhlamini (SMOKEY)
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(detailsId, iconId) {
+            var details = document.getElementById(detailsId);
+            var toggleIcon = document.getElementById(iconId);
+    
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                toggleIcon.innerText = 'close'; // Materialize icon for minus(-)
+            } else {
+                details.style.display = 'none';
+                toggleIcon.innerText = 'add'; // Materialize icon for plus(+)
+            }
+        }
+    </script>
+</body>
+
+
+</html>
