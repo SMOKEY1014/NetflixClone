@@ -8,12 +8,18 @@
         padding: 50px 30px;
     }
     .banner-wrap {
-        height: 70dvh;
+        height: 100dvh;
     }
+    .banner-container {
+        height: 100dvh;
+    }
+   
     .get-started-form {
+        align-items: center;
+        justify-content: center;
         display: flex;
         flex-direction: column;
-        padding-left: 10px;
+        margin-top: 40px;
     }
     .get-started-form button {
         width: 375px;
@@ -47,27 +53,37 @@
         flex-direction: column;
     }
     .tv-container img {
-        height : 30dvh;
+        width: 70dw;
+        z-index: 3;
+        overflow: hidden;
+    }
+    #tv .tv-container img {
+        width: 100%;
         z-index: 3;
         overflow: hidden;
     }
     .tv-container video {
-        height : 19.5dvh;
+        height : 60%;
+    }
+    #mobile {
+        width: 150%;
+        overflow: hidden;
     }
     .kids img {
         height: 28dvh;
     }
     .download-card {
         z-index: 5;
-        height: 8dvh;
-        width: 75dvw;
+        height: 30%;
+        max-height: 80px;
+        width: 50dvw;
     }
     .download-card .stranger {
         height : 10dvh;
         width: 50dvw;
     }
     .download-card .stranger img {
-        height: 6dvh;
+        height: 100%;
     }
     .download-card img {
         height: 7dvh;
@@ -96,9 +112,15 @@
     }
     .banner-container {
         padding: 30px 30px;
+        min-height: 70vh;
     }
-    .info-container faq {
+    .info-container, #info-con3, .kids {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info img {
+        width: 80vw;
     }
     
     
